@@ -1,0 +1,90 @@
+.weatherContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  margin-top: 12rem;
+  
+  & > img {
+    height: 20rem;
+  }
+  
+  > .tempContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    > .tempVariation {
+      display: flex;
+      flex-direction: column;
+      margin-top: -1rem;
+      
+      font-size: 2.5rem;
+      > .celsius {
+        padding-left: 1.5rem;
+        font-size: 3.5rem;
+      }
+      font-weight: 700;
+      
+      & > div > img {
+        padding-right: 1rem;
+      }
+    }
+    > .temperature {
+      font-size: 14rem;
+    }
+  }
+  
+  > .cityContainer {
+    font-size: 2.25rem;
+  }
+  
+  > .detailsContainer {
+    font-size: 1.75rem;
+  }
+  
+  > .topContainer {
+    width: 700px;
+    max-width: 95vw;
+    
+    display: flex;
+    justify-content: space-between;
+    font-size: 2rem;
+    & > div {
+      display: flex;
+      align-items: center;
+      & > img {
+        width: 5rem;
+        padding-right: 1rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .weatherContainer {
+    margin-top: 8rem;
+    
+    > .topContainer {
+      font-size: 1.75rem;
+      flex-direction: column;
+      align-items: center;
+      & > div {
+        padding-top: 2rem;
+        & > img {
+          width: 4.375rem;
+          padding-right: 0.875rem;
+        }
+      }
+    }
+  }
+}
+
+@media (max-height: 500px) {
+  > .weatherContainer {
+    overflow-y: scroll;
+  }
+  .footer {
+    display: none;
+  }
+}
