@@ -2,7 +2,7 @@ import React from 'react';
 import Moment from 'react-moment';
 import './styles.scss';
 
-import Cloudy from '../../assets/icons/cloudy.svg'
+// import Cloudy from '../../assets/icons/cloudy.svg'
 
 // Material
 import { Typography } from '@material-ui/core';
